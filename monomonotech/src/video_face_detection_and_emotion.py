@@ -50,8 +50,8 @@ output_layer_ir_emotion = compiled_model_emotion.output(0)
 # カメラの番号は、内蔵カメラが0、さらにUSBで追加のカメラを接続すると1のように基本的には0から順番に割り当てられているはず（公式ドキュメントのチュートリアルによると-1の場合もあるとのこと）。
 # とりあえず順番に試してみればよい。
 # また、動画ファイルを指定したいなら、そこまでのpathを指定
-# cap = cv2.VideoCapture(0)
 cap = cv2.VideoCapture(1)  # macbook Airの内部カメラは1だった
+# cap = cv2.VideoCapture(0)
 
 while True:
     ret, frame = cap.read()

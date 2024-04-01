@@ -22,6 +22,7 @@ out_layer_ir = compiled_model.output(0)
 
 # カメラ準備
 cap = cv2.VideoCapture(1)
+# cap = cv2.VideoCapture(0)
 
 while True:
     ret, frame = cap.read()
