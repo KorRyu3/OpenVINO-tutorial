@@ -1,2 +1,14 @@
 [tools]
 python = {version="3.10.14", virtualenv='.venv'}
+
+[tasks.setup]
+description = "Setup project"
+run = "mise i && poetry install"
+
+[tasks.video_face_detection]
+description = "Video Capture face detection"
+run = "poetry run python3 src/video_face_detection.py"
+
+[tasks.video_face_detection_and_emotion]
+description = "Video Capture face detection and emotion"
+run = "poetry run python3 src/video_face_detection_and_emotion.py"

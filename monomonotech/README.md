@@ -24,22 +24,18 @@ cd OpenVINO-tutorial/monomonotech/
 ```
 
 ```bash
-mise i
-```
-
-```bash
-poetry install
+mise run setup
 ```
 
 ## Usage
 ### 内部カメラを使用した、人の顔の物体検出
 ```bash
 # エラーが出たら、video_face_detection.py の 25行目のコメントアウトを外してみてください。
-poetry run python3 src/video_face_detection.py
+mise run video_face_detection
 ```
 
 ### 内部カメラを使用した、人の顔の物体検出と感情検出
 ```bash
 # エラーが出たら、video_face_detection_and_emotion.py の 54行目のコメントアウトを外してみてください。
-poetry run python3 src/video_face_detection_and_emotion.py
+mise run video_face_detection_and_emotion
 ```
