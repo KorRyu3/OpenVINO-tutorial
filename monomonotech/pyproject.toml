@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "monomonotech"
+version = "0.1.0"
+description = ""
+authors = [
+    "KorRyu3 <146335193+KorRyu3@users.noreply.github.com>"
+]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "~3.10.14"
+openvino = "^2024.0.0"
+opencv-python = "^4.9.0.80"
+openvino-dev = "^2024.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
