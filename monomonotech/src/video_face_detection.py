@@ -24,6 +24,7 @@ out_layer_ir = compiled_model.output(0)
 cap = cv2.VideoCapture(1)
 # cap = cv2.VideoCapture(0)
 
+print("任意のキーを押すと終了します")
 while True:
     ret, frame = cap.read()
 # 入力データフォーマットへ変換

@@ -53,6 +53,7 @@ output_layer_ir_emotion = compiled_model_emotion.output(0)
 cap = cv2.VideoCapture(1)  # macbook Airの内部カメラは1だった
 # cap = cv2.VideoCapture(0)
 
+print("任意のキーを押すと終了します")
 while True:
     ret, frame = cap.read()
     # 入力データフォーマットへ変換

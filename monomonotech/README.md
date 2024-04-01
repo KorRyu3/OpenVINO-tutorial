@@ -17,8 +17,14 @@ OpenVINOは`2024.0.0`Ver.からIE周りが仕様変更されたため、上記�
 - Poetry@^1.8.2 
 
 ## Setup
+
 ```bash
-mise install
+git clone git@github.com:KorRyu3/OpenVINO-tutorial.git
+cd OpenVINO-tutorial/monomonotech/
+```
+
+```bash
+mise i
 ```
 
 ```bash
